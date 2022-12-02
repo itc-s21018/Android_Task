@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/basic_nav"
+    app:startDestination="@id/titleFragment">
+
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="jp.ac.it_college.std.s21018.android_task.TitleFragment"
+        android:label="@string/title_screen_label"
+        tools:layout="@layout/fragment_title" >
+        <action
+            android:id="@+id/action_titleFragment_to_genSelectFragment"
+            app:destination="@id/genSelectFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/genSelectFragment"
+        android:name="jp.ac.it_college.std.s21018.android_task.generation"
+        android:label="@string/gen_select_screen_label"
+        tools:layout="@layout/fragment_generation">
+        <action
+            android:id="@+id/action_genSelectFragment_to_quizFragment"
+            app:destination="@id/quizFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="jp.ac.it_college.std.s21018.android_task.quiz"
+        android:label="@string/quiz_screen_label"
+        tools:layout="@layout/fragment_quiz">
+        <action
+            android:id="@+id/action_quizFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+        <argument
+            android:name="num"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_quizFragment_to_genSelectFragment"
+            app:destination="@id/genSelectFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="jp.ac.it_college.std.s21018.android_task.ResultFragment"
+        android:label="@string/result_screen_label"
+        tools:layout="@layout/fragment_result" >
+        <action
+            android:id="@+id/action_resultFragment_to_genSelectFragment"
+            app:destination="@id/genSelectFragment" />
+    </fragment>
+</navigation>

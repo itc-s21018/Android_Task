@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">PokemonQuiz</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_screen_label">タイトル画面</string>
+    <string name="gen_select_screen_label">世代選択画面</string>
+    <string name="quiz_screen_label">問題画面</string>
+    <string name="result_screen_label">結果画面</string>
+    <string name="title_text">ポケモンだ〜れだ?</string>
+    <string name="start_text">START!!!</string>
+    <string name="gen_1_select">第一世代</string>
+    <string name="gen_2_select">第二世代</string>
+    <string name="gen_3_select">第三世代</string>
+    <string name="gen_4_select">第四世代</string>
+    <string name="gen_5_select">第五世代</string>
+    <string name="gen_6_select">第六世代</string>
+    <string name="gen_7_select">第七世代</string>
+    <string name="gen_8_select">第八世代</string>
+    <string name="gen_select">第%1$d世代</string>
+    <string name="dareda">だ〜れだ？</string>
+    <string name="your_answer">あなたの回答</string>
+    <string name="correct_answer">答え</string>
+</resources>
